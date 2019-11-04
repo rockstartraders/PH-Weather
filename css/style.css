@@ -9,32 +9,68 @@
 }
 
 .lind{
-    padding-left: 10px;
-    text-align: center;
-    margin-top: 6vh;
+    padding-left: 2vw;
+    text-align: center; 
+    margin-top: 4vh;
+    
+    
 
 }
 
 .title {
     text-align: center;
     margin-top: 5vh;
+    
 }
+
+h1{
+
+  position: fixed;
+}
+
+
+div.lind > h3 {
+    display: inline-flex;
+    position: relative;
+  
+
+}
+
+
+td.rssdog{
+  
+  display: -ms-inline-flexbox;
+  
+}
+
 
 .rssdog {
-    text-align: center;
-    font-size:1.5vw;
+    text-align: justify;
+    font-size: 15px;
     text-decoration: none;
-    margin-left: 18%;
+    margin-left: 20%;
     margin-right: auto;
-    padding-left: 2vw;
+    position: relative;    
    
 
-    font-size: 15px;
-    text-align: justify;
+    text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
+    
 
 }
+
+
+.rssdog:hover{
+  text-decoration: none;
+}
+
+
+:nth-child(8) {
+  display:none;
+}
+
+
 
 
 .pamagat h1{
@@ -66,10 +102,11 @@ a:-webkit-any-link {
   }
  
   .s-m{
-    position: absolute;
+    position: fixed;
     top: 92%;
     left: 50%;
     transform: translate(-50%,-50%);
+
   }
   .s-m a{
     display: inline-flex;
@@ -107,7 +144,7 @@ a:-webkit-any-link {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   main {
