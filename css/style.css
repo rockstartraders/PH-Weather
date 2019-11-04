@@ -70,7 +70,9 @@ td.rssdog{
   display:none;
 }
 
-
+body > main > section > div > div:nth-child(8) > a {
+  display:none;
+}
 
 
 .pamagat h1{
