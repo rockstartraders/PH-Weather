@@ -1,11 +1,30 @@
 
 
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+
+         
+  }
+
 
 .weather{
-    padding-left: 10px;
-    text-align: center;
-    margin-left: 6vw;
-    margin-top: 8vh;
+   /*  padding-left: 10px;
+    text-align: center; 
+    margin-left: 5vw;  
+    margin-top: 8vh;   */
+    display: flexbox;
+    margin: auto;
+    flex-flow: inherit;
+    position: relative;
+    
+    
+       
 }
 
 .lind{
@@ -14,26 +33,36 @@
     margin-top: 4vh;
     
     
-
+    
 }
 
 .title {
-    text-align: center;
-    margin-top: 5vh;
+  display: flexbox;
+  margin: auto;
+  flex-flow: inherit;
+  position: relative;
+  margin-top: 10vh;
+  text-align: center;
     
 }
 
 h1{
 
   position: fixed;
+  
 }
 
 
 div.lind > h3 {
-    display: inline-flex;
-    position: relative;
-  
+   /*  display: inline-flex;
+    position: relative;   */
 
+
+    margin: 0 auto;
+    max-width: 700px;
+    height: 50px;
+
+ 
 }
 
 
@@ -41,29 +70,43 @@ td.rssdog{
   
   display: -ms-inline-flexbox;
   
-}
 
+  }
+
+
+
+  body > main > section > div > table > tbody > tr:nth-child(1) > th {
+    display: none;
+    
+  }
+
+  
+    
+ 
 
 .rssdog {
-    text-align: justify;
-    font-size: 15px;
-    text-decoration: none;
-    margin-left: 20%;
-    margin-right: auto;
-    position: relative;    
    
 
-    text-align: left;
+    font-size: 15px;
+    text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     
 
-}
+    text-align: center;
+   
+       
+             
+  }
 
+  .rssdog:hover{
 
-.rssdog:hover{
-  text-decoration: none;
-}
+    text-decoration: none;
+    background: moccasin;
+
+           
+    
+  }
 
 
 :nth-child(8) {
@@ -85,6 +128,7 @@ body > main > section > div > div:nth-child(4) > a {
   font-weight: bolder;
   text-align: center;
   margin-top: 30%;
+
 }
 
 element.style {
@@ -128,7 +172,7 @@ a:-webkit-any-link {
     font-size: 22px;
   }
   .s-m a:hover{
-    background: #e4791c;
+    background: cornsilk;/* #e4791c; */
   }
   .s-m a i{
     transition: 0.4s all;
@@ -137,21 +181,20 @@ a:-webkit-any-link {
     transform: scale(1.6) rotate(25deg);
   }
   
-
-
-
-
-
-
-
-
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  body > main > section > div > div.s-m > a:nth-child(3) > i:hover{
+    color:#b31217; /* Youtube icon */
   }
+
+
+  body > main > section > div > div.s-m > a:nth-child(1) > i:hover{
+    color:#3b5998;  /* fb icon */
+  }
+  
+  body > main > section > div > div.s-m > a:nth-child(2) > i:hover{
+    color:#4078c0;  /* github icon */
+  }
+
+
   
   main {
     height: 100%;
@@ -159,7 +202,7 @@ a:-webkit-any-link {
   }
   
   aside {
-    background-color: #0799d3;
+    background-color: #2c3e50;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -316,3 +359,5 @@ a:-webkit-any-link {
     z-index: 2;
   }
 
+
+  /* media query */
